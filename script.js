@@ -301,19 +301,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 
 /*====================================================
-=             HERO CARD PARALLAX                      =
+=             HERO FORM                              =
 ====================================================*/
 
-const heroCard = document.querySelector(".hero-card");
+const heroForm = document.querySelector(".hero-form");
+const message = document.querySelector(".form-message");
 
-document.addEventListener("mousemove",(e)=>{
+heroForm.addEventListener("submit", (e) => {
 
-    const x = (window.innerWidth / 2 - e.clientX) / 40;
+    e.preventDefault();
 
-    const y = (window.innerHeight / 2 - e.clientY) / 40;
+    message.textContent = "\n ✔ ¡Gracias por registrarte!";
 
-    heroCard.style.transform =
-        `rotateY(${x}deg) rotateX(${-y}deg)`;
+    message.classList.remove("error");
+    message.classList.add("success");
+
+    heroForm.reset();
+
+    setTimeout(() => {
+
+        message.textContent = "";
+
+        message.classList.remove("success");
+
+    }, 3000);
 
 });
 
