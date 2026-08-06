@@ -258,6 +258,8 @@ scrollTopBtn.addEventListener("click",()=>{
 
 hamburger.addEventListener("click",()=>{
 
+    hamburger.classList.toggle("active");
+
     navMenu.classList.toggle("active");
 
 });
@@ -266,12 +268,13 @@ document.querySelectorAll(".nav-menu a").forEach(link=>{
 
     link.addEventListener("click",()=>{
 
+        hamburger.classList.remove("active");
+
         navMenu.classList.remove("active");
 
     });
 
 });
-
 
 /*====================================================
 =             SMOOTH LINKS                            =
@@ -311,7 +314,7 @@ heroForm.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    message.textContent = "\n ✔ ¡Gracias por registrarte!";
+    message.textContent = "✔ ¡Gracias por registrarte!";
 
     message.classList.remove("error");
     message.classList.add("success");
