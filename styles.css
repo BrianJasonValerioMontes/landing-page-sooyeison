@@ -1806,5 +1806,115 @@ color:white;
 }
 
 /*====================================================
+=               GRACIAS.HTML                          =
+====================================================*/
+
+.thanks-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.thanks-container{
+
+    max-width:700px;
+
+    width:100%;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.thanks-container h1{
+
+    font-size:4rem;
+
+    margin-bottom:25px;
+
+}
+
+.thanks-container p{
+
+    font-size:1.2rem;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+    max-width:600px;
+
+    text-align:center;
+
+}
+
+.thanks-container .btn{
+
+    width:230px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:10px;
+
+}
+
+/*====================================================
+=          BOTÓN GRACIAS.HTML                         =
+====================================================*/
+
+.thanks-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.thanks-container a.btn{
+
+    width:230px;
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    align-self:center;
+
+}
+
+/*====================================================
 =                 THE END                             =
 ====================================================*/

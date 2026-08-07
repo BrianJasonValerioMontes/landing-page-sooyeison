@@ -302,36 +302,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 });
 
-
-/*====================================================
-=             HERO FORM                              =
-====================================================*/
-
-const heroForm = document.querySelector(".hero-form");
-const message = document.querySelector(".form-message");
-
-heroForm.addEventListener("submit", (e) => {
-
-    e.preventDefault();
-
-    message.textContent = "✔ ¡Gracias por registrarte!";
-
-    message.classList.remove("error");
-    message.classList.add("success");
-
-    heroForm.reset();
-
-    setTimeout(() => {
-
-        message.textContent = "";
-
-        message.classList.remove("success");
-
-    }, 3000);
-
-});
-
-
 /*====================================================
 =          ACTIVE LINK ON SCROLL                      =
 ====================================================*/

@@ -125,7 +125,7 @@
 
             <div class="hero-image reveal">
 
-                <form class="hero-form">
+                <form class="hero-form" action="database/guardar.php" method="POST">
 
                     <h3>Únete a la comunidad</h3>
 
@@ -135,6 +135,7 @@
 
                         <input
                             type="text"
+                            name="nombre"
                             placeholder="Nombre completo"
                             required>
 
@@ -144,6 +145,7 @@
 
                         <input
                             type="email"
+                            name="correo"
                             placeholder="Correo electrónico"
                             required>
 
@@ -151,7 +153,7 @@
 
                     <div class="input-group">
 
-                        <select required>
+                        <select name="objetivo" required>
 
                             <option value="">Selecciona tu objetivo</option>
 
@@ -172,8 +174,6 @@
                         Registrarme
 
                     </button>
-                    
-                    <p class="form-message"></p>
 
                 </form>
 
