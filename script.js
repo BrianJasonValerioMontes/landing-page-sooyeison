@@ -12,7 +12,6 @@ const header = document.querySelector(".header");
 const progressBar = document.querySelector(".progress-bar");
 const cursorGlow = document.querySelector(".cursor-glow");
 const revealElements = document.querySelectorAll(".reveal");
-const scrollTopBtn = document.getElementById("scrollTop");
 const navMenu = document.querySelector(".nav-menu");
 const hamburger = document.querySelector(".hamburger");
 
@@ -217,40 +216,6 @@ window.addEventListener("scroll",()=>{
     }
 
 });
-
-
-/*====================================================
-=               SCROLL TO TOP                         =
-====================================================*/
-
-window.addEventListener("scroll",()=>{
-
-    if(window.scrollY > 500){
-
-        scrollTopBtn.classList.add("show");
-
-    }
-
-    else{
-
-        scrollTopBtn.classList.remove("show");
-
-    }
-
-});
-
-scrollTopBtn.addEventListener("click",()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
-});
-
 
 /*====================================================
 =                HAMBURGER MENU                       =
